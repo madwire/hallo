@@ -72,8 +72,8 @@
         else
           top_offset = selectionRect.bottom + 10
 
-        top = $(window).scrollTop() + top_offset
-        left = $(window).scrollLeft() + selectionRect.left
+        top = jQuery(window).scrollTop() + top_offset
+        left = jQuery(window).scrollLeft() + selectionRect.left
       else
         if this.options.positionAbove
           top_offset = -10 - toolbar_height_offset
